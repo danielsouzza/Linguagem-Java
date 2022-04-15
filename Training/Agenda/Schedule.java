@@ -11,31 +11,36 @@ class Schedule{
     }
     public int searchPerson(String name){
         for (int i = 0; i < nump; i++){
-            if(name == this.people[i].getName()) return (i+1);
+            if(this.people[i].getName().equals(name)){
+                return i = i + 1;
+            }
         }
         return (0);
     }
 
     public int removePerson(String name){
-        int i = searchPerson(name) -1;
+        int i = searchPerson(name);
         People r = new People();
-        if(i < 0) return 1;
+        if(i > 0){
+            this.people[i-1] = r;
+            return (this.people[i-1].getName().equals("")) ? 0 : 1;
+        }
         else{ 
-            this.people[i] = r;
-            return (this.people[i].getName() == "") ? 0 : 1;
+            return 1;
         }
     }
 
     public void setPerson(People person){
-        this.people[nump++] = person;
+        this.people[nump] = person;
+        nump++;
     }
     public String getPerson(int i){
-        return this.people[i].toString();
+        return this.people[i-1].toString();
     }
     public String toString(){
         String agenda = "";
-        for (People i : people){
-            agenda = agenda + i.toString() + "\n";
+        for (int i = 0; i < nump; i++){
+            agenda = agenda + people[i].toString() + "\n";
         }
         return agenda;
     }
