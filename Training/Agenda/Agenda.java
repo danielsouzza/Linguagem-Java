@@ -1,3 +1,4 @@
+package Training.Agenda;
 import java.util.Scanner;
 
 public class Agenda {

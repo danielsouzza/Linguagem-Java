@@ -1,3 +1,4 @@
+package Training.Thread;
 class Threadd extends Thread{
     private int somatorio;
     private int[] vetor;

@@ -1,3 +1,5 @@
+package Training.Agenda;
+
 class Schedule{
     private static int nump = 0;
     private People[] people = new People[10];

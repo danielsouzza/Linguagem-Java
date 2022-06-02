@@ -1,10 +1,9 @@
+package Training.Livro.Normal;
 import java.util.Scanner;
 
 // Class to calculate BMI
 class DepartmentOfHealth {
-    private int imc;
     public DepartmentOfHealth (){
-        this.imc = 0;
     }
     // returns the BMI
     public double calculate(double weight, double height){

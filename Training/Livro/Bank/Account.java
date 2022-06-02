@@ -1,4 +1,4 @@
-package Bank;
+package Training.Livro.Bank;
 
 public class Account {
     private String name;

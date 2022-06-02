@@ -1,3 +1,6 @@
+package Training.Agenda;
+
+
 class People {
     private String name;
     private String phone;
