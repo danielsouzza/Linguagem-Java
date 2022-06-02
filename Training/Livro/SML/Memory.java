@@ -1,14 +1,14 @@
 package Training.Livro.SML;
 
 public class Memory {
-    public static int size = 100;
+    public  int size = 100;
     private int[] memoria;
     private int accumulator;
 
     public Memory() {
         this.memoria = new int[size];
         this.accumulator = 0;
-        for(int i = 0; i < size; i++) memoria[i] = 0;
+        for(int i = 0; i < size; i++) memoria[i] = 0000;
     }
 
     public int read(int mar) { // 10;
@@ -45,5 +45,9 @@ public class Memory {
 
     public int getAccumulator(){
         return this.accumulator;
+    }
+
+    public int getSize(){
+        return this.size;
     }
 }
